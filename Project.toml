@@ -1,0 +1,16 @@
+name = "ParquetStores"
+uuid = "da7a6f3e-f359-4376-82ed-d2d5f3be0019"
+authors = ["FemtoTrader"]
+version = "1.0.0-DEV"
+
+[deps]
+Parquet2 = "98572fba-bba0-415d-956f-fa77e587d26d"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
