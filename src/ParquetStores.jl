@@ -43,6 +43,11 @@ module ParquetStores
         return ds
     end
 
+    function Base.write(lib::ParquetLibrary, symbol, data)
+        path = _symbol_path(lib, symbol)
+        return Parquet2.writefile(path, data)
+    end
+
     struct LibraryAccessor
         root_path
     end
